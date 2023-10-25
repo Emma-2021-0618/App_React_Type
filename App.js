@@ -1,23 +1,73 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, ScrollView } from 'react-native';
 import SearchBar from './src/components/atoms/searchComponents';
-import Button from './src/components/atoms/buttonComponent';
-import CustomImage from './src/components/atoms/imageComponent';
+import MyCustomComponent from './src/components/molecules/dataGamemolecule';
+
+
 
 export default function App() {
   return (
-    <View style={styles.container}>
+    <ScrollView style={styles.container}>
       <SearchBar />
-      <Button
-        title="Mi Botón"
-        style={{ backgroundColor: "green" }} // Personaliza los estilos aquí
-        textStyle={{ color: "white" }} // Personaliza los estilos del texto aquí
+
+      <MyCustomComponent
+        imageSource="https://img.olympics.com/images/image/private/t_s_w960/t_s_16_9_g_auto/f_auto/primary/ufbu7eoorghfd9qqbwux"
+        appNameText1="Judo"
+        appNameText2="clases de judo profesional"
+        buttonText="Obtener"
+        
       />
-      <CustomImage
-        sourceUri="https://img.olympics.com/images/image/private/t_s_w960/t_s_16_9_g_auto/f_auto/primary/ufbu7eoorghfd9qqbwux" // URL de la primera imagen
-        style={{ marginBottom: 10 }} // Personaliza los estilos aquí
+      <MyCustomComponent
+        imageSource="https://img.olympics.com/images/image/private/t_s_w960/t_s_16_9_g_auto/f_auto/primary/ufbu7eoorghfd9qqbwux"
+        appNameText1="Judo"
+        appNameText2="clases de judo profesional"
+        buttonText="Obtener"
+        
       />
-    </View>
+      <MyCustomComponent
+        imageSource="https://img.olympics.com/images/image/private/t_s_w960/t_s_16_9_g_auto/f_auto/primary/ufbu7eoorghfd9qqbwux"
+        appNameText1="Judo"
+        appNameText2="clases de judo profesional"
+        buttonText="Obtener"
+        
+      />
+      <MyCustomComponent
+        imageSource="https://img.olympics.com/images/image/private/t_s_w960/t_s_16_9_g_auto/f_auto/primary/ufbu7eoorghfd9qqbwux"
+        appNameText1="Judo"
+        appNameText2="clases de judo profesional"
+        buttonText="Obtener"
+        
+      />
+      <MyCustomComponent
+        imageSource="https://img.olympics.com/images/image/private/t_s_w960/t_s_16_9_g_auto/f_auto/primary/ufbu7eoorghfd9qqbwux"
+        appNameText1="Judo"
+        appNameText2="clases de judo profesional"
+        buttonText="Obtener"
+        
+      />
+      <MyCustomComponent
+        imageSource="https://img.olympics.com/images/image/private/t_s_w960/t_s_16_9_g_auto/f_auto/primary/ufbu7eoorghfd9qqbwux"
+        appNameText1="Judo"
+        appNameText2="clases de judo profesional"
+        buttonText="Obtener"
+        
+      />
+      <MyCustomComponent
+        imageSource="https://img.olympics.com/images/image/private/t_s_w960/t_s_16_9_g_auto/f_auto/primary/ufbu7eoorghfd9qqbwux"
+        appNameText1="Judo"
+        appNameText2="clases de judo profesional"
+        buttonText="Obtener"
+        
+      />
+      <MyCustomComponent
+        imageSource="https://img.olympics.com/images/image/private/t_s_w960/t_s_16_9_g_auto/f_auto/primary/ufbu7eoorghfd9qqbwux"
+        appNameText1="Judo"
+        appNameText2="clases de judo profesional"
+        buttonText="Obtener"
+        
+      />
+      
+    </ScrollView>
   );
 }
 
